@@ -1,4 +1,6 @@
-﻿namespace FakeDataGenerator.generator;
+﻿using FakeDataGenerator.models;
+
+namespace FakeDataGenerator.generator;
 
 public interface IGetRandomData
 {
@@ -11,4 +13,6 @@ public interface IGetRandomData
     int GetRandomAge();
 
     string GetRandomPhoneNumber();
+
+    Person GetRandomTemplatePerson(); // have to add interface that returns  <out T>
 }
